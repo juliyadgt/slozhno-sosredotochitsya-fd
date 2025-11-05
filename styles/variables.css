@@ -1,4 +1,39 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+
+
+:root {
+  /* Переменные для текста */
+  --text-size: 18px;
+  --bold-text: 700;
+  --regular-text: 400;
+  --line-height: 1.3;
+
+  /* Общий фон картинка */
+  --page-background-image: url(../images/cover-image-dark.png);
+
+  /* Общий фон цвет */
+  --page-background-color: #000028;
+
+  /* Главный заголовок цвет */
+  --title-color: #db00ff;
+
+  /* Главный заголовок цвет тени */
+  --title-shadow: #ff0070;
+
+  /* Цвет текста заголовка секции h2 (section__title) */
+  --section-title-color: #ff0070;
+
+  /* Фон подзаголовка 1 экран (header__subtitle), фон заголовков h3 (card__title), фон акцентного параграфа (title-decor) */
+  --decor-background-color: #ff0070;
+
+  /* Цвет текста подзаголовка 1 экран (header__subtitle), заголовков h3 (card__title), акцентного параграфа (title-decor)*/
+  --decor-text-color: #000028;
+
+  /* Цвет основного текста карточек */
+  --main-text-color: #f1b2ce;
+
+  /* Цвет декоративных рамок */
+  --decor-elements-color: #ff0070;
+
+  /* Переменная для обводки кнопок с прозрачностью */
+  --button-border-color: 255, 0, 112;
+}
