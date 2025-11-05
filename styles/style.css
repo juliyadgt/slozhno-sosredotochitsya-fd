@@ -5,33 +5,34 @@
   background-color: var(--page-background-color);
   background-position: center;
   background-attachment: fixed;
+  object-fit: cover;
   font-size: var(--text-size);
   line-height: var(--line-height);
 }
 
 /* Стили для точки и надписи rec */
 
-.page::before {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 18px;
-  right: 19px;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background-color: var(--decor-elements-color);
-  box-shadow: 0 0 4px 2px var(--decor-elements-color);
-}
-
 .decor__text {
-  display: block;
+  display: var(--element-display);
   position: absolute;
   top: 10px;
   right: 38px;
   font-weight: var(--regular-text);
   color: var(--section-title-color);
   line-height: 1.4;
+}
+
+.decor__text::before {
+  display: var(--element-display);
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 42px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--decor-elements-color);
+  box-shadow: 0 0 4px 2px var(--decor-elements-color);
 }
 
 /* Стили для декоративных рамок */
@@ -109,9 +110,10 @@
   padding-block-end: 3px;
   font-size: var(--text-size);
   font-weight: var(--regular-text);
-  color: var(--decor-background-color);
+  color: var(--button-color);
   border: none;
   background-color: transparent;
+   cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
@@ -157,6 +159,8 @@
 /* Дополнительный текст в 3-ей секции */
 
 .accent__subtitle {
+  font-size: inherit;
+  line-height: inherit;
   margin-block-end: 20px;
 }
 
@@ -206,9 +210,8 @@
 }
 
 .text__links:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--main-text-color);
-  text-underline-offset: 2px;
+  text-decoration: none;
+  border-bottom: 1px solid  var(--main-text-color);
 }
 
 .text__links:focus {
@@ -243,11 +246,6 @@
 @media (width >= 768px) {
   /* Стили для точки и надписи rec */
 
-  .page::before {
-    top: 28px;
-    right: 29px;
-  }
-
   .decor__text {
     top: 20px;
     right: 48px;
@@ -279,7 +277,8 @@
 
   .header__subtitle {
     justify-self: end;
-    width: 364px;
+    width: 100%;
+    max-width: 364px;
   }
 
   /* Стили для блока main */
@@ -309,10 +308,6 @@
     grid-column: 1 / 3;
   }
 
-  .section .title__decor {
-    height: min-content;
-    margin-block-end: 20px;
-  }
 
   /* Стили для галереи */
 
@@ -356,7 +351,6 @@
 
 @media (width >= 1024px) {
   .header {
-    height: 100vh;
     min-height: 768px;
     padding: 20px 20px 134px 0;
   }
@@ -378,7 +372,8 @@
 
   .header__subtitle {
     justify-self: end;
-    width: 491px;
+    width: 100%;
+    max-width: 491px;
   }
 
   .section {

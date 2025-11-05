@@ -1,33 +1,38 @@
 
-
 :root.theme-dark {
-/* Общий фон картинка */
+  /* Общий фон картинка */
   --page-background-image: url(../images/cover-image-dark.png);
- 
- /* Общий фон цвет */
+
+  /* Общий фон цвет */
   --page-background-color: #000028;
 
- /* Главный заголовок цвет */
-  --title-color: #DB00FF;
+  /* Главный заголовок цвет */
+  --title-color: #db00ff;
 
-/* Главный заголовок цвет тени */
-  --title-shadow: #FF0070;
+  /* Главный заголовок цвет тени */
+  --title-shadow: #ff0070;
 
-/* Цвет текста заголовка секции h2 (section__title) */
-  --section-title-color: #FF0070; 
+  /* Цвет текста заголовка секции h2 (section__title) */
+  --section-title-color: #ff0070;
 
-/* Фон подзаголовка 1 экран (header__subtitle), фон заголовков h3 (card__title), фон акцентного параграфа (title-decor) */
-  --decor-background-color: #FF0070; 
+  /* Фон подзаголовка 1 экран (header__subtitle), фон заголовков h3 (card__title), фон акцентного параграфа (title-decor) */
+  --decor-background-color: #ff0070;
 
-/* Цвет текста подзаголовка 1 экран (header__subtitle), заголовков h3 (card__title), акцентного параграфа (title-decor)*/
-  --decor-text-color: #000028; 
+  /* Цвет текста подзаголовка 1 экран (header__subtitle), заголовков h3 (card__title), акцентного параграфа (title-decor)*/
+  --decor-text-color: #000028;
 
   /* Цвет основного текста карточек */
-  --main-text-color: #F1B2CE;
+  --main-text-color: #f1b2ce;
 
   /* Цвет декоративных рамок */
-  --decor-elements-color: #FF0070; 
+  --decor-elements-color: #ff0070;
 
-   /* Переменная для обводки кнопок с прозрачностью */
+  /* Переменная для обводки кнопок с прозрачностью */
   --button-border-color: 255, 0, 112;
+
+  /* Переменная для цвета кнопок */
+  --button-color: #ff0070;
+
+  /* Переменная для отображения декоративных элементов */
+  --element-display: block;
 }
