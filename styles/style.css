@@ -5,7 +5,7 @@
   background-color: var(--page-background-color);
   background-position: center;
   background-attachment: fixed;
-  object-fit: cover;
+  background-size: cover;
   font-size: var(--text-size);
   line-height: var(--line-height);
 }
@@ -113,7 +113,7 @@
   color: var(--button-color);
   border: none;
   background-color: transparent;
-   cursor: pointer;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
